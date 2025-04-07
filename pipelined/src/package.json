@@ -1,0 +1,12 @@
+{
+  "name": "rvcodecjs-assembler",
+  "version": "1.0.0",
+  "description": "CLI tool to encode RISC-V assembly to binary using rvcodec.js",
+  "type": "module",
+  "main": "assemble.mjs",
+  "scripts": {
+    "start": "node assemble.mjs input.txt output.txt"
+  },
+  "license": "AGPL-3.0-or-later"
+}
+

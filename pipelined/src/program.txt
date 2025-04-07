@@ -1,0 +1,31 @@
+   #x2 contains the base address of memory
+   #x1 conains the number of elements
+   #initiall store 1 in x6
+   
+   
+                    add x26,x0, x0   
+                    sub x31 ,x1,x6  
+    Loop1:         
+                   beq x26, x31, Exit
+                   add x27, x0, x0 
+                   sub x30 ,x1 ,x26  
+                   sub x30, x30, x6 
+   Loop2:
+                  beq x27, x30, Temp
+                   add x20, x2, x27  
+                   add x22, x27, x6  
+                  add x21 ,x2, x22   
+                   ld  x18, 0(x20)   
+                   ld x19 ,0(x21)    
+                   blt x19 ,x18, Swap  
+intermediate: 
+                   add x27, x27, x6   
+                   beq x0, x0, Loop2  
+    Temp:
+              add x26 ,x26, x6     
+              beq x0 ,x0 ,Loop1
+    Swap:
+              sd x18, 0(x21)
+              sd x19 ,0(x20)
+              beq x0, x0, intermediate
+    Exit:

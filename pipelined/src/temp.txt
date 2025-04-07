@@ -1,0 +1,18 @@
+ 0 add x5, x0, x0         
+4  add x6, x0, x0        
+8  addi x7, x5, 10        
+ 12   addi x8, x6, 20        
+16  sub x9, x7, x8         
+20    and x10, x9, x7        
+24  lw x11, 0(x10)         
+28    add x12, x11, x8       
+32 beq x12, x0, label1    
+36   addi x13, x12, 5       
+40    label1: sub x14, x13, x6      
+44    or x15, x14, x5     
+48    sw x15, 0(x6)
+
+
+r w same
+r w diff , pos r , neg w
+r w diff , pos w, neg r +

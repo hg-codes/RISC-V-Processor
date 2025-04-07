@@ -1,0 +1,84 @@
+$date
+	Fri Mar  7 11:17:27 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module HazardDetectionUnit_tb $end
+$var wire 1 ! PCWrite $end
+$var wire 1 " IF_ID_Write $end
+$var wire 1 # ID_EX_MuxSelect $end
+$var reg 1 $ ID_EX_MEMRead $end
+$var reg 5 % ID_EX_RegisterRd [4:0] $end
+$var reg 5 & IF_ID_RegisterRs1 [4:0] $end
+$var reg 5 ' IF_ID_RegisterRs2 [4:0] $end
+$scope module uut $end
+$var wire 1 $ ID_EX_MEMRead $end
+$var wire 5 ( ID_EX_RegisterRd [4:0] $end
+$var wire 5 ) IF_ID_RegisterRs1 [4:0] $end
+$var wire 5 * IF_ID_RegisterRs2 [4:0] $end
+$var reg 1 # ID_EX_MuxSelect $end
+$var reg 1 " IF_ID_Write $end
+$var reg 1 ! PCWrite $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b0 *
+b0 )
+b0 (
+b0 '
+b0 &
+b0 %
+0$
+0#
+1"
+1!
+$end
+#10000
+b100 '
+b100 *
+b11 &
+b11 )
+b10 %
+b10 (
+#20000
+1#
+0"
+0!
+1$
+b10 &
+b10 )
+#30000
+1#
+0"
+0!
+b11 '
+b11 *
+b101 &
+b101 )
+b11 %
+b11 (
+#40000
+0#
+1"
+1!
+b1101 '
+b1101 *
+b1100 &
+b1100 )
+b1000 %
+b1000 (
+#50000
+0$
+b10 '
+b10 *
+b1 &
+b1 )
+b1 %
+b1 (
+#60000
